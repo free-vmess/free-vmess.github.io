@@ -366,24 +366,9 @@ opkg install v2ray-core
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 使用 WebSocket 是否有安全优势？</h5></div>
-    <div class="panel-body">
-        WebSocket 可伪装成普通 HTTP/HTTPS 流量，配合 TLS 加密，可隐藏真实通信特征，提升抗封锁能力。结合策略组使用，可保证访问速度和网络稳定性，同时增加节点安全性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何设置？</h5></div>
-    <div class="panel-body">
-        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何管理用户流量配额？</h5></div>
     <div class="panel-body">
         管理员可以为每个用户设置上传和下载带宽以及总流量上限。超出限制可自动降速或阻止访问，保证服务器资源合理分配，提高整体网络公平性和用户体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2RayN 的作用是什么？</h5></div>
-    <div class="panel-body">
-        V2RayN 是 V2Ray 的 Windows 图形客户端，提供节点管理、订阅导入、日志查看等功能。它支持多协议配置，并可与系统代理集成，是 Windows 用户最常用的代理管理工具之一。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
@@ -391,14 +376,19 @@ opkg install v2ray-core
         管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 相比 Clash Premium 有哪些改进？</h5></div>
+    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何设置？</h5></div>
     <div class="panel-body">
-        Mihomo 作为 Clash Premium 的开源替代品，移除了闭源依赖并优化了内存管理。它支持更多自定义规则和插件扩展，对开发者更友好，同时保持与 Clash 配置完全兼容。<hr />    </div>
+        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 的用户管理可以分组吗？</h5></div>
+    <div class="panel-heading"><h5>V2RayN 的作用是什么？</h5></div>
     <div class="panel-body">
-        支持用户分组管理，可为不同组设置独立带宽、流量配额和节点访问权限。分组管理便于大规模用户维护，确保每个组的网络资源合理分配，提升整体管理效率。<hr />    </div>
+        V2RayN 是 V2Ray 的 Windows 图形客户端，提供节点管理、订阅导入、日志查看等功能。它支持多协议配置，并可与系统代理集成，是 Windows 用户最常用的代理管理工具之一。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 使用 WebSocket 是否有安全优势？</h5></div>
+    <div class="panel-body">
+        WebSocket 可伪装成普通 HTTP/HTTPS 流量，配合 TLS 加密，可隐藏真实通信特征，提升抗封锁能力。结合策略组使用，可保证访问速度和网络稳定性，同时增加节点安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的测速功能如何优化节点选择？</h5></div>
@@ -406,9 +396,19 @@ opkg install v2ray-core
         Shadowrocket 可测量节点延迟和丢包率，并根据结果排序策略组节点。延迟低的节点会优先使用，保证网页浏览、视频和游戏的速度和稳定性，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 的用户管理可以分组吗？</h5></div>
+    <div class="panel-body">
+        支持用户分组管理，可为不同组设置独立带宽、流量配额和节点访问权限。分组管理便于大规模用户维护，确保每个组的网络资源合理分配，提升整体管理效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 伪装域名如何选择以提升隐蔽性？</h5></div>
     <div class="panel-body">
         伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 相比 Clash Premium 有哪些改进？</h5></div>
+    <div class="panel-body">
+        Mihomo 作为 Clash Premium 的开源替代品，移除了闭源依赖并优化了内存管理。它支持更多自定义规则和插件扩展，对开发者更友好，同时保持与 Clash 配置完全兼容。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的 PAC 模式有什么优势？</h5></div>
@@ -442,16 +442,16 @@ opkg install v2ray-core
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-6-clash-node.htm" title="翻墙机场 | 10月6日19.1M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月6日19.1M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-22-clash-verge-rev-node-share.htm" title="翻墙机场 | 10月22日18.1M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月22日18.1M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-8-clash-verge-rev-github.htm" title="翻墙机场 | 11月8日20.9M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 11月8日20.9M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-1-free-node-subscribe.htm" title="翻墙机场 | 11月1日22.6M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 11月1日22.6M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-10-clash-verge-rev-nodes.htm" title="翻墙机场 | 10月10日22.9M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月10日22.9M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-7-clash-v2ray-ss-ssr.htm" title="翻墙机场 | 10月7日19.4M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月7日19.4M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-13-clash-verge-rev-github.htm" title="翻墙机场 | 10月13日20.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月13日20.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-15-node-share.htm" title="翻墙机场 | 10月15日20.7M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月15日20.7M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-16-clash-verge-rev-node.htm" title="翻墙机场 | 10月16日19.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月16日19.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-27-clash-verge-rev-node.htm" title="翻墙机场 | 10月27日22.6M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月27日22.6M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-18-clash-node.htm" title="翻墙机场 | 10月18日18.9M/S|免费Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月18日18.9M/S|免费Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-8-clash-verge-rev-github.htm" title="翻墙机场 | 11月8日20.9M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 11月8日20.9M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-5-clash-node.htm" title="翻墙机场 | 10月5日18.4M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月5日18.4M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-21-clash-stash.htm" title="翻墙机场 | 10月21日22.2M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月21日22.2M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-24-clash-node.htm" title="翻墙机场 | 10月24日21.6M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月24日21.6M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-25-free-node-subscribe.htm" title="翻墙机场 | 10月25日20.3M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月25日20.3M/S|免费Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-23-free-node-subscribe.htm" title="翻墙机场 | 10月23日20.3M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月23日20.3M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-12-clash-v2ray-ss-ssr.htm" title="翻墙机场 | 11月12日20.8M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 11月12日20.8M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-11-free-node-subscribe.htm" title="翻墙机场 | 10月11日22.8M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 10月11日22.8M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -463,7 +463,7 @@ opkg install v2ray-core
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
