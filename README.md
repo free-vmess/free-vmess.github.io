@@ -1,4 +1,4 @@
-# 翻墙机场 | 4月25日22.3M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐  更新时间 2026-04-25 10:07:08
+# 翻墙机场 | 5月2日18.7M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐  更新时间 2026-05-02 09:41:49
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://free-vmess.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://free-vmess.github.io/uploads/2026/04/0-20260425.yaml
-- https://free-vmess.github.io/uploads/2026/04/1-20260425.yaml
-- https://free-vmess.github.io/uploads/2026/04/2-20260425.yaml
-- https://free-vmess.github.io/uploads/2026/04/3-20260425.yaml
-- https://free-vmess.github.io/uploads/2026/04/4-20260425.yaml
+- https://free-vmess.github.io/uploads/2026/05/0-20260502.yaml
+- https://free-vmess.github.io/uploads/2026/05/1-20260502.yaml
+- https://free-vmess.github.io/uploads/2026/05/2-20260502.yaml
+- https://free-vmess.github.io/uploads/2026/05/3-20260502.yaml
+- https://free-vmess.github.io/uploads/2026/05/4-20260502.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://free-vmess.github.io/uploads/2026/04/0-20260425.txt
-- https://free-vmess.github.io/uploads/2026/04/1-20260425.txt
-- https://free-vmess.github.io/uploads/2026/04/2-20260425.txt
-- https://free-vmess.github.io/uploads/2026/04/3-20260425.txt
-- https://free-vmess.github.io/uploads/2026/04/4-20260425.txt
+- https://free-vmess.github.io/uploads/2026/05/0-20260502.txt
+- https://free-vmess.github.io/uploads/2026/05/1-20260502.txt
+- https://free-vmess.github.io/uploads/2026/05/2-20260502.txt
+- https://free-vmess.github.io/uploads/2026/05/3-20260502.txt
+- https://free-vmess.github.io/uploads/2026/05/4-20260502.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://free-vmess.github.io/uploads/2026/04/20260425.json
+- https://free-vmess.github.io/uploads/2026/05/20260502.json
 
 ## 更多Clash节点订阅 ：
 
