@@ -332,14 +332,19 @@ A5：下载官方渠道的软件，避免使用未知来源，设置复杂密码
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何兼容 Clash 的配置文件？</h5></div>
+    <div class="panel-heading"><h5>VLESS + XTLS 模式能减少握手延迟吗？</h5></div>
     <div class="panel-body">
-        Sing-box 支持 Clash 规则格式的解析，用户可直接导入 Clash 的 YAML 配置文件进行使用。虽然部分高级参数需要调整，但大多数分流和策略配置都能自动识别，便于迁移。<hr />    </div>
+        XTLS 通过减少握手次数和加密开销，降低延迟，特别适合短连接或高并发场景。结合策略组，可保证连接稳定性和访问速度，适用于移动网络和游戏环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan-Go 的 MUX 功能能降低延迟吗？</h5></div>
+    <div class="panel-heading"><h5>SSR 的混淆和协议设置如何选择才能绕过封锁？</h5></div>
     <div class="panel-body">
-        启用 MUX 后，多条 TCP/QUIC 连接可以共享单个隧道，减少握手次数和连接延迟。对于频繁短连接应用如游戏或社交软件，可以明显提升响应速度。<hr />    </div>
+        选择模拟 HTTPS 的混淆方式如 tls1.2_ticket_auth，并搭配 AEAD 或协议插件，可以有效隐藏流量特征，降低被封锁风险。不同网络环境需测试选择最优组合。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow TUN 模式与 SOCKS5 代理有什么区别？</h5></div>
+    <div class="panel-body">
+        TUN 模式拦截系统 IP 层流量，实现全局代理；SOCKS5 代理通常只影响指定应用。TUN 更适合全局加速，如游戏、视频和浏览器流量，提高网络稳定性和覆盖范围。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>QuantumultX 支持哪些类型的分流规则？</h5></div>
@@ -352,19 +357,9 @@ A5：下载官方渠道的软件，避免使用未知来源，设置复杂密码
         Nekoray 支持多配置运行。用户可在“多配置模式”下同时开启不同协议或节点的代理，程序会自动创建多个监听端口，方便多应用或分流测试使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan-Go 的端口不可达怎么办？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的多路复用在短连接场景下有什么优势？</h5></div>
     <div class="panel-body">
-        检查服务器防火墙是否开放对应端口，同时确认客户端和服务器端端口一致。还可以尝试更换节点或端口，确保 TLS 证书有效以保证连接成功。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow TUN 模式与 SOCKS5 代理有什么区别？</h5></div>
-    <div class="panel-body">
-        TUN 模式拦截系统 IP 层流量，实现全局代理；SOCKS5 代理通常只影响指定应用。TUN 更适合全局加速，如游戏、视频和浏览器流量，提高网络稳定性和覆盖范围。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆和协议设置如何选择才能绕过封锁？</h5></div>
-    <div class="panel-body">
-        选择模拟 HTTPS 的混淆方式如 tls1.2_ticket_auth，并搭配 AEAD 或协议插件，可以有效隐藏流量特征，降低被封锁风险。不同网络环境需测试选择最优组合。<hr />    </div>
+        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，能提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的节点测速如何优化连接？</h5></div>
@@ -372,14 +367,19 @@ A5：下载官方渠道的软件，避免使用未知来源，设置复杂密码
         Shadowrocket 测试节点延迟和丢包率，并根据结果排序策略组节点。延迟低的节点优先使用，可保证网页浏览、视频播放和游戏连接速度和稳定性，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式能减少握手延迟吗？</h5></div>
+    <div class="panel-heading"><h5>Trojan-Go 的 MUX 功能能降低延迟吗？</h5></div>
     <div class="panel-body">
-        XTLS 通过减少握手次数和加密开销，降低延迟，特别适合短连接或高并发场景。结合策略组，可保证连接稳定性和访问速度，适用于移动网络和游戏环境。<hr />    </div>
+        启用 MUX 后，多条 TCP/QUIC 连接可以共享单个隧道，减少握手次数和连接延迟。对于频繁短连接应用如游戏或社交软件，可以明显提升响应速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用在短连接场景下有什么优势？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 如何兼容 Clash 的配置文件？</h5></div>
     <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，能提高吞吐量和连接稳定性，优化网络体验。    </div>
+        Sing-box 支持 Clash 规则格式的解析，用户可直接导入 Clash 的 YAML 配置文件进行使用。虽然部分高级参数需要调整，但大多数分流和策略配置都能自动识别，便于迁移。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan-Go 的端口不可达怎么办？</h5></div>
+    <div class="panel-body">
+        检查服务器防火墙是否开放对应端口，同时确认客户端和服务器端端口一致。还可以尝试更换节点或端口，确保 TLS 证书有效以保证连接成功。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -409,11 +409,11 @@ A5：下载官方渠道的软件，避免使用未知来源，设置复杂密码
     <div class="panel-body">
         <div class="row">
             <div class="text-center">
-                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">
+                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">
                     <img src="/assets/website/img/G/xingchen.webp" class="avatar" alt="星辰机场">
                 </a>
                 <dl>
-                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></dt>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></dt>
                     <dd>
                         <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p>                    </dd>
                 </dl>
@@ -427,16 +427,16 @@ A5：下载官方渠道的软件，避免使用未知来源，设置复杂密码
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-14-clash-stash.htm" title="翻墙机场 | 5月14日20.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 5月14日20.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-24-clash-stash-node.htm" title="翻墙机场 | 6月24日21.9M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月24日21.9M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-7-clash-verge-rev-windows.htm" title="翻墙机场 | 5月7日18.3M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 5月7日18.3M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-22-clash-node-daily-updates.htm" title="翻墙机场 | 5月22日22.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 5月22日22.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-13-node-share.htm" title="翻墙机场 | 6月13日21.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月13日21.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-1-clash-verge-rev-node-share.htm" title="翻墙机场 | 6月1日21.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月1日21.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-18-free-node-subscribe.htm" title="翻墙机场 | 6月18日22.5M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月18日22.5M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-16-free-node-subscribe.htm" title="翻墙机场 | 5月16日21.7M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 5月16日21.7M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-2-clash-verge-rev-nodes.htm" title="翻墙机场 | 6月2日21.5M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月2日21.5M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-26-clash-v2ray-ss-ssr.htm" title="翻墙机场 | 5月26日19.8M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 5月26日19.8M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-4-free-node-subscribe.htm" title="翻墙机场 | 7月4日20M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/SSR节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 7月4日20M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/SSR节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-13-clash-verge-rev-node.htm" title="翻墙机场 | 7月13日23M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 7月13日23M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-15-clash-stash.htm" title="翻墙机场 | 6月15日22.6M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月15日22.6M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-10-clash-node-daily-updates.htm" title="翻墙机场 | 6月10日22.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月10日22.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-12-clash-node-daily-updates.htm" title="翻墙机场 | 7月12日22.5M/S|免费Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 7月12日22.5M/S|免费Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-11-clash-stash.htm" title="翻墙机场 | 7月11日21.6M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 7月11日21.6M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-14-clash-verge-rev-node-github.htm" title="翻墙机场 | 6月14日21.4M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Trojan节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月14日21.4M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Trojan节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-25-clash-verge-rev-github.htm" title="翻墙机场 | 6月25日22.9M/S|免费Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 6月25日22.9M/S|免费Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-10-clash-meta-github.htm" title="翻墙机场 | 7月10日21.4M/S|免费Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 7月10日21.4M/S|免费Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-3-clash-verge-rev-node.htm" title="翻墙机场 | 7月3日23M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">翻墙机场 | 7月3日23M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -448,13 +448,10 @@ A5：下载官方渠道的软件，避免使用未知来源，设置复杂密码
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                     </ul>
     </div>
@@ -481,7 +478,7 @@ A5：下载官方渠道的软件，避免使用未知来源，设置复杂密码
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
                                 <a href="/">免费Vmess节点 订阅中文网</a> 版权所有
             <br />Powered by WordPress
         </div>
